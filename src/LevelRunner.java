@@ -16,7 +16,7 @@ public class LevelRunner {
 		System.out.println(levels);
 		Letters.printUnderscorebylenght(levelsplit[2]);
         Letters.printLivesbylenght(levelsplit[1]);
-        PapaMain.waitSeconds(1);
+        Main.waitSeconds(1);
 		Letters.takedLetterSanner(split[2]); 
 		return false;
 	}
