@@ -3,12 +3,12 @@ import java.util.Scanner;
 import java.util.StringJoiner;
 
 public class LevelRunner {
-    private LevelManager lm = new LevelManager();
-    private Scanner scan = Main.scan;
+    private final LevelManager lm = new LevelManager();
+    private final Scanner scan = Main.scan;
     private int level;
     private String word = "";
     private String result = "";
-    private int hp = 0;
+
     public boolean playLevel(int l) {
         result = "";
         level = l;
@@ -23,7 +23,7 @@ public class LevelRunner {
         System.out.println(result);
 
         //hp
-        hp = lm.getHp(level);
+        int hp = lm.getHp(level);
         printHp(hp);
 
         //missed letters
